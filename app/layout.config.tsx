@@ -1,4 +1,4 @@
-import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
+import type { BaseLayoutProps } from "fumadocs-ui/layouts/shared";
 
 /**
  * Shared layout configurations
@@ -9,13 +9,22 @@ import type { BaseLayoutProps } from 'fumadocs-ui/layouts/shared';
  */
 export const baseOptions: BaseLayoutProps = {
   nav: {
-    title: 'My App',
+    title: (
+      <span className="bg-green-300 border-gray-500 border dark:text-black">
+        Cocomon
+      </span>
+    ),
   },
   links: [
     {
-      text: 'Documentation',
-      url: '/docs',
-      active: 'nested-url',
+      text: "Documentation",
+      url: "/docs",
+      active: "nested-url",
+    },
+    {
+      text: "Blog",
+      url: "/blog",
+      active: "nested-url",
     },
   ],
 };
